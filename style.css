@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Futura";
+    src: url('./font/Futura\ Bold\ Italic.otf');
+}
+header {
+    height: 100px;
+    background: #B8B8B8;
+    color: #1D1D63;
+    font-family: 'Futura';
+    font-size: 64px;
+    text-align: center;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+.hero {
+    height:600px;
+    background:#7C7C7C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+main {
+    background: #7D2E60;
+    height: 100vw;
+    font-family: 'Futura';
+    font-weight: 100;
+    margin: 0;
+    padding: 10px;
+}
+.profile-pic {
+    width:230px;
+    height:230px;
+    border-radius:300px;
+    border: #7D2E60 4px solid;
+}
