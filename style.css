@@ -9,12 +9,24 @@
 h1 {
     color: #1D1D63;
     font-family: 'Futura';
-    font-size: 64px;
+    font-size: 82px;
     text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+header {
+    background: #DEE0CB;
+    margin: 0;
+    height: 90px;
+    margin: 0;
+}
+header h1 {
+    margin: 0;
 }
 .hero {
     height:600px;
-    background:#7C7C7C;
+    background-image: url("./img/grid.png");
+    background-size: cover;
+    /* background:#7C7C7C; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +41,10 @@ main {
     padding: 10px;
 }
 .profile-pic {
-    width:210px;
-    height:210px;
+    width:200px;
+    height:200px;
     border-radius:4000px;
-    border: #7D2E60 4px solid;
+    border: #7D2E60 8px solid;
 }
 canvas {
     width: 100px;
@@ -44,8 +56,9 @@ canvas {
     border-width:5px;  
     border-style:double;
     width: 350px;
-    height: 150px;
+    height: 100px;
     border-radius: 8px;
-    padding: 5px;
+    padding: 15px;
     font-family: "Poke";
+    margin-left: 10px;
 }

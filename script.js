@@ -1,9 +1,9 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
     "Hello! My name is Joel.", 
-    "I'd love to code for you!"
+    "I'd love to work for you!"
     );
-    var iSpeed = 100; // time delay of print out
+    var iSpeed = 60; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
     var iScrollAt = 20; // start scrolling up at this many lines
@@ -21,7 +21,7 @@ var aText = new Array(
      while ( iRow < iIndex ) {
       sContents += aText[iRow++] + '<br /><br />';
      }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
      if ( iTextPos++ == iArrLength ) {
       iTextPos = 0;
       iIndex++;
@@ -33,6 +33,5 @@ var aText = new Array(
       setTimeout("typewriter()", iSpeed);
      }
     }
-    
     
     typewriter();
