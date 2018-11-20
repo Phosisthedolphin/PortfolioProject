@@ -2,18 +2,15 @@
     font-family: "Futura";
     src: url('./font/Futura\ Bold\ Italic.otf');
 }
-header {
-    height: 100px;
-    background: #B8B8B8;
+@font-face {
+    font-family: "Poke";
+    src: url('./font/Pokemon\ GB.ttf');
+}
+h1 {
     color: #1D1D63;
     font-family: 'Futura';
     font-size: 64px;
     text-align: center;
-    padding: 10px 0 0 0;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-
 }
 .hero {
     height:600px;
@@ -32,8 +29,23 @@ main {
     padding: 10px;
 }
 .profile-pic {
-    width:230px;
-    height:230px;
-    border-radius:300px;
+    width:210px;
+    height:210px;
+    border-radius:4000px;
     border: #7D2E60 4px solid;
+}
+canvas {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+#typeout {
+    background: #C2FF70;
+    border-width:5px;  
+    border-style:double;
+    width: 350px;
+    height: 150px;
+    border-radius: 8px;
+    padding: 5px;
+    font-family: "Poke";
 }
