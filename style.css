@@ -1,20 +1,28 @@
 @font-face {
     font-family: "Futura";
-    src: url('./font/Futura\ Bold\ Italic.otf');
+    src: url('./font/futura\ light\ bt.ttf');
 }
 @font-face {
     font-family: "Poke";
     src: url('./font/Pokemon\ GB.ttf');
 }
+@font-face {
+    font-family: "Nes";
+    src: url('./font/PressStart2P.ttf');
+}
 h1 {
     color: #1D1D63;
     font-family: 'Futura';
-    font-size: 82px;
-    text-align: center;
-    text-shadow: 2px 2px 2px black;
+    font-size: 28px;
+    font-style: italic;
+}
+h2 {
+    color: #1D1D63;
+    font-family: 'Nes';
+    font-size: 14px;
 }
 header {
-    background: #DEE0CB;
+    background: #D6D6D6;
     margin: 0;
     height: 90px;
     margin: 0;
@@ -23,16 +31,28 @@ header h1 {
     margin: 0;
 }
 .outer {
-    background: #DEE0CB;
+    background: #D6D6D6;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
+}
+.outer h1 {
+    position: relative;
+    top: 60px;
+    left: -165px;
+}
+.outer h2 {
+    position: relative;
+    top: 120px;
+    left: -330px;
+    text-shadow: 1px 0px 0px black;
 }
 .bezel {
-    width: 50%;
-    height: 80%;
+    width: 46%;
+    height: 90%;
+    min-width: 600px;
     background: gray;
     display: flex;
     justify-content: center;
@@ -41,17 +61,25 @@ header h1 {
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 80px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border: 1px solid darkslategrey;
 }
 .hero {
-    height: 80%;
-    width: 70%;
-    background-image: url("./img/grid.png");
+    height: 85%;
+    width: 75%;
+    min-width: 400px;
+    background-image: url("./img/gbpic2.png");
     background-size: cover;
     /* background:#7C7C7C; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    -webkit-box-shadow: inset -1px -1px 8px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px -1px 8px 7px rgba(0,0,0,0.75);
+    box-shadow: inset -1px -1px 8px 7px rgba(0,0,0,0.75);
     
 }
 main {
@@ -63,10 +91,10 @@ main {
     padding: 10px;
 }
 .profile-pic {
-    width:200px;
-    height:200px;
+    width:30%;
+    height:auto;
     border-radius:4000px;
-    border: #7D2E60 8px solid;
+    border: #90BE53 8px solid;
 }
 canvas {
     width: 100px;
@@ -82,4 +110,56 @@ canvas {
     padding: 15px;
     font-family: "Poke";
     margin-left: 10px;
+}
+.power-btn {
+    font-family: sans-serif;
+    font-size: 10px;
+    color: white;
+    position: relative;
+    left: 50px;
+    top: -20px;
+    text-transform: uppercase;
+}
+.power-light {
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset darkred 0 -1px 9px, red 0 2px 12px;
+    position: relative;
+    top: -50px;
+    left: 76px;
+}
+.power-light-off {
+    background: black;
+}
+.top-line {
+    border-bottom: 4px solid #7D2E60;
+    height:20px;
+    width: 98%;
+    position: relative;
+    margin: 0px;
+    align-items: left;
+}
+.bottom-line {
+    border-bottom: 4px solid #1D1D63;
+    height: 20px;
+    width: 98%;
+    position: relative;
+    top: -8px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+.bezel-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 600px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -20px;
 }
