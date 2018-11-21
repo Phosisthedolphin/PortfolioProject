@@ -1,7 +1,7 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "Hello! My name is Joel.", 
-    "I'd love to work for you!"
+    "JOEL: Hello. My web skills are super effective!",
+    "Please check out my portfolio!",
     );
     var iSpeed = 60; // time delay of print out
     var iIndex = 0; // start printing array at this posision
