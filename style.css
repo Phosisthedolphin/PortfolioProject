@@ -24,14 +24,14 @@ header h1 {
 }
 .outer {
     background: #DEE0CB;
-    height: 800px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .bezel {
-    width: 80%;
+    width: 50%;
     height: 80%;
     background: gray;
     display: flex;
@@ -44,7 +44,7 @@ header h1 {
 }
 .hero {
     height: 80%;
-    width: 80%;
+    width: 70%;
     background-image: url("./img/grid.png");
     background-size: cover;
     /* background:#7C7C7C; */
@@ -77,7 +77,7 @@ canvas {
     background: #C2FF70;
     border-width:5px;  
     border-style:double;
-    width: 350px;
+    width: 300px;
     border-radius: 8px;
     padding: 15px;
     font-family: "Poke";
