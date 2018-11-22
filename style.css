@@ -19,7 +19,14 @@ h1 {
 h2 {
     color: #1D1D63;
     font-family: 'Nes';
+    font-size: 16px;
+}
+h3 {
+    color: #1D1D63;
+    font-family: 'Futura';
     font-size: 14px;
+    padding: 0;
+    margin: 0;
 }
 header {
     background: #D6D6D6;
@@ -30,30 +37,52 @@ header {
 header h1 {
     margin: 0;
 }
-.outer {
+.gb-frame {
+    width: 1000px;
     background: #D6D6D6;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: inset 0px 5px 29px 0px #000000;
+   -webkit-box-shadow: inset 0px 5px 29px 0px #000000;
+   -moz-box-shadow: inset 0px 5px 29px 0px #000000;
 }
-.outer h1 {
+.gb-text {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    top: 60px;
-    left: -165px;
+    left: 33px;
 }
-.outer h2 {
+.star-background {
+    background: #222;
+    display: flex;
+    justify-content: center;
+}
+.gb-text h1 {
     position: relative;
-    top: 120px;
-    left: -330px;
-    text-shadow: 1px 0px 0px black;
+    top: 50px;
+    left: -190px;
+    text-shadow: 1px 0px 0px #1D1D63;
+}
+.gb-text h2 {
+    position: relative;
+    top: 65px;
+    left: -200px;
+}
+.gb-text h3 {
+    position: relative;
+    top: 80px;
+    left: -180px;
 }
 .bezel {
-    width: 46%;
+    width: 75%;
     height: 90%;
-    min-width: 600px;
-    background: gray;
+    min-width: 700px;
+    background: #6F7981;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,19 +100,19 @@ header h1 {
     min-width: 400px;
     background-image: url("./img/gbpic2.png");
     background-size: cover;
-    /* background:#7C7C7C; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-bottom: -10px;
-    -webkit-box-shadow: inset -1px -1px 8px 7px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset -1px -1px 8px 7px rgba(0,0,0,0.75);
-    box-shadow: inset -1px -1px 8px 7px rgba(0,0,0,0.75);
+    box-shadow: inset -1px 10px 53px 0px #000000;
+   -webkit-box-shadow: inset -1px 10px 53px 0px #000000;
+   -moz-box-shadow: inset -1px 10px 53px 0px #000000;
+    padding: 10px;
     
 }
 main {
-    background: #7D2E60;
+    background: #861C57;
     height: 100vw;
     font-family: 'Futura';
     font-weight: 100;
@@ -112,11 +141,11 @@ canvas {
     margin-left: 10px;
 }
 .power-btn {
-    font-family: sans-serif;
-    font-size: 10px;
+    font-family: "Futura";
+    font-size: 12px;
     color: white;
     position: relative;
-    left: 50px;
+    left: 30px;
     top: -20px;
     text-transform: uppercase;
 }
@@ -129,28 +158,41 @@ canvas {
     box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset darkred 0 -1px 9px, red 0 2px 12px;
     position: relative;
     top: -50px;
-    left: 76px;
+    left: 55px;
 }
 .power-light-off {
     background: black;
 }
 .top-line {
-    border-bottom: 4px solid #7D2E60;
+    border-bottom: 4px solid #861C57;
     height:20px;
     width: 98%;
     position: relative;
     margin: 0px;
     align-items: left;
+    top: -10px;
 }
 .bottom-line {
     border-bottom: 4px solid #1D1D63;
     height: 20px;
     width: 98%;
     position: relative;
-    top: -8px;
+    top: -15px;
     padding: 0px;
     margin: 0px;
     display: flex;
+}
+.dot-matrix-text {
+    background: #6F7981;
+    color: white;
+    font-family: "Futura";
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+    left: 90px;
+    z-index: 100;
 }
 .bezel-column {
     display: flex;

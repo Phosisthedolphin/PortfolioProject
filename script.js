@@ -1,37 +1,36 @@
-// set up text to print, each item in array is new line
-var aText = new Array(
+var gbScreenText1 = new Array(
     "JOEL: Hello. My web skills are super effective!",
     "Please check out my portfolio!",
-    );
-    var iSpeed = 60; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
-     
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
-     
-    function typewriter()
-    {
-     sContents =  ' ';
-     iRow = Math.max(0, iIndex-iScrollAt);
-     var destination = document.getElementById("typeout");
-     
-     while ( iRow < iIndex ) {
-      sContents += aText[iRow++] + '<br /><br />';
-     }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
-     if ( iTextPos++ == iArrLength ) {
-      iTextPos = 0;
-      iIndex++;
-      if ( iIndex != aText.length ) {
-       iArrLength = aText[iIndex].length;
-       setTimeout("typewriter()", 500);
-      }
-     } else {
-      setTimeout("typewriter()", iSpeed);
-     }
+);
+
+var speed = 60;
+var indexPos = 0;
+var arrayLength = gbScreenText1[0].length;
+var scrollAtLine = 20;
+var textPos = 0;
+var contents = '';
+var currentRow;
+
+function textBox()
+{
+    contents = ' ';
+    currentRow = Math.max(0, indexPos-scrollAtLine);
+    var destination = document.getElementById("typeout");
+
+    while ( currentRow < indexPos ) {
+        contents += gbScreenText1[currentRow++] + '<br /><br />';
     }
-    
-    typewriter();
+    destination.innerHTML = contents + gbScreenText1[indexPos].substring(0, textPos);
+    if ( textPos++ == arrayLength ) {
+        textPos = 0;
+        indexPos++;
+        if ( indexPos != gbScreenText1.length ) {
+            arrayLength = gbScreenText1[indexPos].length;
+            setTimeout('textBox()', 500);
+        }
+    } else {
+        setTimeout('textBox()', speed);
+    }
+}
+
+textBox();
