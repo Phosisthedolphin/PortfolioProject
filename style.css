@@ -40,9 +40,9 @@ header h1 {
 .gb-frame {
     width: 1000px;
     background: #D6D6D6;
-    height: 600px;
+    height: 1000px;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     flex-direction: column;
     border-top-left-radius: 20px;
@@ -61,6 +61,11 @@ header h1 {
     background: #222;
     display: flex;
     justify-content: center;
+    background: linear-gradient(-45deg, #1D1D63, rgb(185, 0, 77), #861C57);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 8s ease infinite;
+	-moz-animation: Gradient 8s ease infinite;
+	animation: Gradient 8s ease infinite;
 }
 .gb-text h1 {
     position: relative;
@@ -80,7 +85,7 @@ header h1 {
 }
 .bezel {
     width: 75%;
-    height: 90%;
+    height: 500px;
     min-width: 700px;
     background: #6F7981;
     display: flex;
@@ -204,4 +209,81 @@ canvas {
     align-items: center;
     position: relative;
     left: -20px;
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.controls {
+    margin:100px 0px 10px 0px;
+    width: 800px;
+    position: relative;
+    background: #D6D6D6;
+}
+.gb-buttonA {
+    width: 75px;
+    height: 70px;
+    background-image: linear-gradient(#861C57, #a22269);
+    box-shadow: 0 5px #5c133c;
+    border-radius: 150px;
+    border: none;
+    position: relative;
+    left: 310px;
+    top: -80px;
+    outline: none;
+    cursor: pointer;
+}
+.gb-buttonB {
+    width: 75px;
+    height: 70px;
+    background-image: linear-gradient(#861C57, #a22269);
+    box-shadow: 0 5px #5c133c;
+    border-radius: 150px;
+    border: none;
+    position: relative;
+    left: 350px;
+    top: -120px;
+    outline: none;
+    cursor: pointer;
+}
+.gb-buttonA:active{
+    background: linear-gradient(#861C57, #a22269);
+    box-shadow: 0 2px #5c133c;
+    top: -75px;
+    text-decoration: none;
+    outline: none;
+}
+.gb-buttonB:active{
+    background: linear-gradient(#861C57, #a22269);
+    box-shadow: 0 2px #5c133c;
+    top: -115px;
+    text-decoration: none;
+    outline: none;
+}
+.a-btn {
+    color: #1D1D63;
+    font-family: "Nes";
+    position: relative;
+    left: 710px;
+    top: -310px;
+    transform: rotate(-30deg);
+    padding: 0;
+    margin: 0;
+}
+.b-btn {
+    color: #1D1D63;
+    font-family: "Nes";
+    position: relative;
+    left: 590px;
+    top: -285px;
+    transform: rotate(-30deg);
+    padding: 0;
+    margin: 0;
 }

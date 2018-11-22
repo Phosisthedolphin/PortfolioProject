@@ -16,6 +16,7 @@ function textBox()
     contents = ' ';
     currentRow = Math.max(0, indexPos-scrollAtLine);
     var destination = document.getElementById("typeout");
+    
 
     while ( currentRow < indexPos ) {
         contents += gbScreenText1[currentRow++] + '<br /><br />';
@@ -33,4 +34,10 @@ function textBox()
     }
 }
 
-textBox();
+function clearBox()
+{
+    document.getElementById("typeout").innerHTML = "PRESS B TO START";
+}
+
+document.getElementById("a-btn").addEventListener("click", clearBox);
+document.getElementById("b-btn").addEventListener("click", textBox);
