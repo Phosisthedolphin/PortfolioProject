@@ -36,6 +36,7 @@ function textBox()
 
 function clearBox()
 {
+    console.log('in clear box');
     document.getElementById("typeout").innerHTML = "PRESS B TO START";
 }
 
