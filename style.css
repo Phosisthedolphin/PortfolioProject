@@ -64,6 +64,7 @@ header h1 {
     flex-direction: row;
     position: relative;
     left: 33px;
+    margin-left: 35px;
 }
 .gradient-background {
     background: #222;
@@ -113,7 +114,7 @@ header h1 {
     margin-bottom: 40px;
     border: 1px solid darkslategrey;
 }
-.hero {
+.gb-screen {
     height: 85%;
     width: 75%;
     min-width: 400px;
