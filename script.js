@@ -48,12 +48,21 @@ function changeClass()
     document.getElementById("codeboy").innerHTML = '<FONT COLOR="#FF0000">C</FONT><FONT COLOR="#FFC000">O</FONT><FONT COLOR="#FFff00">D</FONT><FONT COLOR="#3Fff00">E</FONT><FONT COLOR="#00ff00"> </FONT><FONT COLOR="#00ffC0">B</FONT><FONT COLOR="#00ffff">O</FONT><FONT COLOR="#00C0ff">Y</FONT>';
     console.log(classCount);
     if (classCount == 1) {
-        var node = document.createTextNode("THE FUN CANNOT BE HALTED.");
+        var node = document.createTextNode('THE FUN CANNOT BE HALTED');
         document.getElementById("typeout").appendChild(node);
     }
     classCount++;
     console.log(classCount);
 }
 
+function reset()
+{
+    classCount == 0;
+    document.getElementById("codeboy").innerHTML = 'CODE BOY';
+    document.getElementById("background").classList.remove("gradient-background");
+    document.getElementById("background").classList.add("boring-background");
+}
+
 document.getElementById("a-btn").addEventListener("click", textBox);
 document.getElementById("b-btn").addEventListener("click", changeClass);
+document.getElementById("select-btn").addEventListener("click", reset);

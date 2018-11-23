@@ -44,7 +44,7 @@ header h1 {
 .gb-frame {
     width: 1000px;
     background: #D6D6D6;
-    height: 1250px;
+    height: 1150px;
     display: flex;
     justify-content: top;
     align-items: center;
@@ -125,8 +125,8 @@ header h1 {
     margin-top: 10px;
     margin-bottom: -10px;
     -webkit-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
     padding: 10px;
     
 }
@@ -233,8 +233,9 @@ canvas {
 	}
 }
 .controls {
-    margin:100px 0px 10px 0px;
-    width: 800px;
+    margin:10px 0px 0px 0px;
+    width: 700px;
+    left:-45px;
     position: relative;
     background: #D6D6D6;
 }
@@ -284,7 +285,7 @@ canvas {
     position: relative;
     font-size: 30px;
     left: 710px;
-    top: -320px;
+    top: -315px;
     transform: rotate(-30deg);
     padding: 0;
     margin: 0;
@@ -295,7 +296,7 @@ canvas {
     position: relative;
     font-size: 30px;
     left: 590px;
-    top: -295px;
+    top: -293px;
     transform: rotate(-30deg);
     padding: 0;
     margin: 0;
@@ -307,7 +308,7 @@ canvas {
     border-radius: 15px;
     position: relative;
     box-shadow: 1px 1px 1px black;
-    top: -20px;
+    top: -30px;
     left: 300px;
     padding: 0px;
     margin: 0px;
@@ -323,7 +324,7 @@ canvas {
     border-radius: 15px;
     position: relative;
     box-shadow: 1px 1px 1px black;
-    top: -20px;
+    top: -30px;
     left: 340px;
     padding: 0px;
     margin: 0px;
@@ -338,7 +339,7 @@ canvas {
     background: #999999;
     border-radius: 15px;
     position: relative;
-    top: -19px;
+    top: -29px;
     left: 300px;
     padding: 0px;
     margin: 0px;
@@ -353,7 +354,7 @@ canvas {
     background: #999999;
     border-radius: 15px;
     position: relative;
-    top: -19px;
+    top: -29px;
     left: 340px;
     padding: 0px;
     margin: 0px;
@@ -368,7 +369,7 @@ canvas {
     font-size: 30px;
     position: relative;
     left: 285px;
-    top: -175px;
+    top: -170px;
     padding: 0px;
     margin: 0px;
     transform: rotate(-25deg);
@@ -379,7 +380,7 @@ canvas {
     font-size: 30px;
     position: relative;
     left: 410px;
-    top: -205px;
+    top: -200px;
     padding: 0px;
     margin: 0px;
     transform: rotate(-25deg);
