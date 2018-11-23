@@ -1,6 +1,6 @@
 var gbScreenText1 = new Array(
     "JOEL: Hello. My web skills are super effective!",
-    "Please check out my portfolio!",
+    "Press START to go to my online resume!"
 );
 
 var speed = 60;
@@ -10,6 +10,7 @@ var scrollAtLine = 20;
 var textPos = 0;
 var contents = '';
 var currentRow;
+var classCount = 0;
 
 function textBox()
 {
@@ -40,5 +41,19 @@ function clearBox()
     document.getElementById("typeout").innerHTML = "PRESS B TO START";
 }
 
-document.getElementById("a-btn").addEventListener("click", clearBox);
-document.getElementById("b-btn").addEventListener("click", textBox);
+function changeClass()
+{
+    document.getElementById("background").classList.remove('boring-background');
+    document.getElementById("background").classList.add('gradient-background');
+    document.getElementById("codeboy").innerHTML = '<FONT COLOR="#FF0000">C</FONT><FONT COLOR="#FFC000">O</FONT><FONT COLOR="#FFff00">D</FONT><FONT COLOR="#3Fff00">E</FONT><FONT COLOR="#00ff00"> </FONT><FONT COLOR="#00ffC0">B</FONT><FONT COLOR="#00ffff">O</FONT><FONT COLOR="#00C0ff">Y</FONT>';
+    console.log(classCount);
+    if (classCount == 1) {
+        var node = document.createTextNode("THE FUN CANNOT BE HALTED.");
+        document.getElementById("typeout").appendChild(node);
+    }
+    classCount++;
+    console.log(classCount);
+}
+
+document.getElementById("a-btn").addEventListener("click", textBox);
+document.getElementById("b-btn").addEventListener("click", changeClass);

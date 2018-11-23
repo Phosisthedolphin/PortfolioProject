@@ -10,6 +10,10 @@
     font-family: "Nes";
     src: url('./font/PressStart2P.ttf');
 }
+@font-face {
+    font-family: "Start";
+    src: url('./font/NES_Controller_MrShrike.ttf')
+}
 h1 {
     color: #1D1D63;
     font-family: 'Futura';
@@ -40,13 +44,17 @@ header h1 {
 .gb-frame {
     width: 1000px;
     background: #D6D6D6;
-    height: 1000px;
+    height: 1250px;
     display: flex;
     justify-content: top;
     align-items: center;
     flex-direction: column;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     box-shadow: inset 0px 5px 29px 0px #000000;
    -webkit-box-shadow: inset 0px 5px 29px 0px #000000;
    -moz-box-shadow: inset 0px 5px 29px 0px #000000;
@@ -57,15 +65,21 @@ header h1 {
     position: relative;
     left: 33px;
 }
-.star-background {
+.gradient-background {
     background: #222;
     display: flex;
     justify-content: center;
-    background: linear-gradient(-45deg, #1D1D63, #1D1D63, rgb(185, 0, 77), #861C57, #C2FF70, #3C511B);
+    background: linear-gradient(-45deg, red, yellow, blue, green, purple, orange, red);
+    /* background: linear-gradient(-45deg, #1D1D63, #1D1D63, #1D1D63, #861C57, #C2FF70, #C2FF70, #C2FF70); */
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 8s ease infinite;
 	-moz-animation: Gradient 8s ease infinite;
 	animation: Gradient 8s ease infinite;
+}
+.boring-background {
+    background: #222;
+    display: flex;
+    justify-content: center;
 }
 .gb-text h1 {
     position: relative;
@@ -110,9 +124,9 @@ header h1 {
     align-items: center;
     margin-top: 10px;
     margin-bottom: -10px;
-    box-shadow: inset -1px 10px 53px 0px #000000;
-   -webkit-box-shadow: inset -1px 10px 53px 0px #000000;
-   -moz-box-shadow: inset -1px 10px 53px 0px #000000;
+    -webkit-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
     padding: 10px;
     
 }
@@ -164,9 +178,6 @@ canvas {
     position: relative;
     top: -50px;
     left: 55px;
-}
-.power-light-off {
-    background: black;
 }
 .top-line {
     border-bottom: 4px solid #861C57;
@@ -227,7 +238,7 @@ canvas {
     position: relative;
     background: #D6D6D6;
 }
-.gb-buttonA {
+.b-btn {
     width: 75px;
     height: 70px;
     background-image: linear-gradient(#861C57, #a22269);
@@ -240,7 +251,7 @@ canvas {
     outline: none;
     cursor: pointer;
 }
-.gb-buttonB {
+.a-btn {
     width: 75px;
     height: 70px;
     background-image: linear-gradient(#861C57, #a22269);
@@ -249,41 +260,169 @@ canvas {
     border: none;
     position: relative;
     left: 350px;
-    top: -120px;
+    top: -130px;
     outline: none;
     cursor: pointer;
 }
-.gb-buttonA:active{
+.b-btn:active{
     background: linear-gradient(#861C57, #a22269);
     box-shadow: 0 2px #5c133c;
     top: -75px;
     text-decoration: none;
     outline: none;
 }
-.gb-buttonB:active{
+.a-btn:active{
     background: linear-gradient(#861C57, #a22269);
     box-shadow: 0 2px #5c133c;
-    top: -115px;
+    top: -125px;
     text-decoration: none;
     outline: none;
 }
-.a-btn {
+.a-btn-text {
     color: #1D1D63;
-    font-family: "Nes";
+    font-family: "Start";
     position: relative;
+    font-size: 30px;
     left: 710px;
-    top: -310px;
+    top: -320px;
     transform: rotate(-30deg);
     padding: 0;
     margin: 0;
 }
-.b-btn {
+.b-btn-text {
     color: #1D1D63;
-    font-family: "Nes";
+    font-family: "Start";
     position: relative;
+    font-size: 30px;
     left: 590px;
-    top: -285px;
+    top: -295px;
     transform: rotate(-30deg);
     padding: 0;
     margin: 0;
+}
+.start-btn {
+    height: 20px;
+    width: 85px;
+    background: #999999;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 1px 1px 1px black;
+    top: -20px;
+    left: 300px;
+    padding: 0px;
+    margin: 0px;
+    transform: rotate(-25deg);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.select-btn {
+    height: 20px;
+    width: 85px;
+    background: #999999;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 1px 1px 1px black;
+    top: -20px;
+    left: 340px;
+    padding: 0px;
+    margin: 0px;
+    transform: rotate(-25deg);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.start-btn:active {
+    height: 20px;
+    width: 85px;
+    background: #999999;
+    border-radius: 15px;
+    position: relative;
+    top: -19px;
+    left: 300px;
+    padding: 0px;
+    margin: 0px;
+    transform: rotate(-25deg);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.select-btn:active {
+    height: 20px;
+    width: 85px;
+    background: #999999;
+    border-radius: 15px;
+    position: relative;
+    top: -19px;
+    left: 340px;
+    padding: 0px;
+    margin: 0px;
+    transform: rotate(-25deg);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.start-btn-text {
+    color: #1D1D63;
+    font-family: "Start";
+    font-size: 30px;
+    position: relative;
+    left: 285px;
+    top: -175px;
+    padding: 0px;
+    margin: 0px;
+    transform: rotate(-25deg);
+}
+.select-btn-text {
+    color: #1D1D63;
+    font-family: "Start";
+    font-size: 30px;
+    position: relative;
+    left: 410px;
+    top: -205px;
+    padding: 0px;
+    margin: 0px;
+    transform: rotate(-25deg);
+}
+.top-lines {
+    background: transparent;
+}
+.top-lines-horz {
+    width: 1000px;
+    height: 10px;
+    padding: 0px;
+    margin: 0px;
+    background: #D6D6D6;
+    position: relative;
+    top: -600px;
+    -webkit-box-shadow: inset 1px -2px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 1px -2px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 1px -2px 7px 0px rgba(0,0,0,0.75);
+
+}
+.top-lines-ver1 {
+    width: 10px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    background: #D6D6D6;
+    position: relative;
+    top: -650px;
+    left: 930px;
+    -webkit-box-shadow: inset 0px 3px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 3px 8px 0px rgba(0,0,0,0.75);
+}
+.top-lines-ver2 {
+    width: 10px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    background: #D6D6D6;
+    position: relative;
+    top: -690px;
+    left: 60px;
+    -webkit-box-shadow: inset 0px 3px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 3px 8px 0px rgba(0,0,0,0.75);
 }
