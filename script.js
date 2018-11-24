@@ -72,6 +72,10 @@ function changeBGColor() {
     var cols = document.getElementsByClassName('gb-frame');
     for(i=0; i<cols.length; i++) {
       cols[i].style.background = '#7B478A';
+      cols[i].style.borderBottomLeftRadius = '150px';
+      cols[i].style.paddingTop = '5px';
+      cols[i].style.borderBottomRightRadius = '150px';
+      cols[i].style.width = '900px';
     }
     var cols2 = document.getElementsByClassName('controls');
     for (j=0; j<cols2.length; j++) {
@@ -81,32 +85,21 @@ function changeBGColor() {
     for (k=0; k<cols3.length; k++) {
         cols3[k].style.zIndex = '-100';
     }
-    var cols4 = document.getElementsByClassName('gb-frame');
-    for (l=0; l<cols4.length; l++) {
-        cols4[l].style.borderBottomLeftRadius = '150px';
-    }
-    var cols5 = document.getElementsByClassName('gb-frame');
-    for (m=0; m<cols5.length; m++) {
-        cols5[m].style.paddingTop = '5px';
-    }
-    var cols6 = document.getElementsByClassName('gb-frame');
-    for (n=0; n<cols6.length; n++) {
-        cols6[n].style.borderBottomRightRadius = '150px';
-    }
-    var cols7 = document.getElementsByClassName('gb-frame');
-    for (o=0; o<cols7.length; o++) {
-        cols7[o].style.width = '900px';
-    } 
     var cols8 = document.getElementsByClassName('gb-text');
     for (p=0; p<cols8.length; p++) {
         cols8[p].style.marginLeft = '90px';
     }
 }
+    
 
 function changeBGColorBack() {
     var cols = document.getElementsByClassName('gb-frame');
     for(i=0; i<cols.length; i++) {
         cols[i].style.background = '#D6D6D6';
+        cols[i].style.borderBottomLeftRadius = '20px';
+        cols[i].style.paddingTop = '50px';
+        cols[i].style.borderBottomRightRadius = '80px';
+        cols[i].style.width = '1000px';
     }
     var cols2 = document.getElementsByClassName('controls');
     for (j=0; j<cols2.length; j++) {
@@ -115,22 +108,6 @@ function changeBGColorBack() {
     var cols3 = document.getElementsByClassName('top-lines');
     for (k=0; k<cols3.length; k++) {
         cols3[k].style.zIndex = '1';
-    }
-    var cols4 = document.getElementsByClassName('gb-frame');
-    for (l=0; l<cols4.length; l++) {
-        cols4[l].style.borderBottomLeftRadius = '20px';
-    }
-    var cols5 = document.getElementsByClassName('gb-frame');
-    for (m=0; m<cols5.length; m++) {
-        cols5[m].style.paddingTop = '50px';
-    }
-    var cols6 = document.getElementsByClassName('gb-frame');
-    for (n=0; n<cols6.length; n++) {
-        cols6[n].style.borderBottomRightRadius = '80px';
-    }
-    var cols7 = document.getElementsByClassName('gb-frame');
-    for (o=0; o<cols7.length; o++) {
-        cols7[o].style.width = '1000px';
     }
     var cols8 = document.getElementsByClassName('gb-text');
     for (p=0; p<cols8.length; p++) {

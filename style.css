@@ -365,6 +365,7 @@ canvas {
     cursor: pointer;
 }
 .start-btn-text {
+    /* //BUTTONS ALL NEED BUG FIXES TO PREVENT OVERFLOW OUT OF CONTAINERS. */
     color: #1D1D63;
     font-family: "Start";
     font-size: 30px;
