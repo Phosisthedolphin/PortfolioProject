@@ -5,8 +5,6 @@ main {
  html, body {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
  }
 
 /*********
@@ -72,15 +70,6 @@ h3 {
     padding: 0;
     margin: 0;
 }
-/* header {
-    background: #D6D6D6;
-    margin: 0;
-    height: 90px;
-    margin: 0;
-}
-header h1 {
-    margin: 0;
-} */
 
 /*********************
 PORTFOLIO LANDING PAGE
@@ -116,7 +105,6 @@ PORTFOLIO LANDING PAGE
     display: flex;
     justify-content: center;
     background: linear-gradient(-45deg, red, yellow, blue, green, purple, orange, red);
-    /* background: linear-gradient(-45deg, #1D1D63, #1D1D63, #1D1D63, #861C57, #C2FF70, #C2FF70, #C2FF70); */
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 8s ease infinite;
 	-moz-animation: Gradient 8s ease infinite;
@@ -466,7 +454,7 @@ PORTFOLIO INDEX
 ***************/
 .hero {
     width: 100%;
-    height: 100vw;
+    /* height: 100%; */
     display: flex;
     margin: 0;
     padding: 0;
@@ -475,22 +463,51 @@ PORTFOLIO INDEX
     height: 100%;
     width: 50%;
     background: #D6D6D6;
+    display: flex;
+    flex-direction: column;
 }
 .hero-slide-right {
-    height: 100%;
     width: 50%;
-    background: red;
+    background: #861C57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.hero-text {
-    position: absolute;
-    font-size: 200px;
+.hero-text1 {
+    font-size: 8vw;
     font-family: "Futura-bold";
     color: #1D1D63;
-    animation: ease-in 3s forwards;
-    animation-fill-mode: forwards;
-    animation-name: anim-1;
+    margin-bottom: 50px;
+    margin-left: 20px;
 }
-@keyframes anim-1 {
-    0%, 33.33% { left: -100%; opacity: 0; }
-    41.63%, 58.29% { left: 15%; opacity: 1; };
+.hero-text2 {
+    font-size: 4vw;
+    font-family: "Futura-bold";
+    color: #1D1D63;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.profile-image {
+    width: 40%;
+    height: auto;
+}
+.index-gb-image {
+    width: 40%;
+    height: auto;
+}
+.barrier-left-1 {
+    width: 100%;
+    position: relative;
+    min-height: 120px;
+}
+.barrier-right-1 {
+    width: 100%;
+    position: relative;
+    min-height: 120px;
+}
+.barrier-right-2 {
+    width: 100%;
+    position: relative;
+    min-height: 150px;
+    margin-bottom: 40px;
 }
