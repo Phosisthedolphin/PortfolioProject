@@ -495,19 +495,18 @@ PORTFOLIO INDEX
     width: 40%;
     height: auto;
 }
-.barrier-left-1 {
+.small-spacer {
     width: 100%;
     position: relative;
-    min-height: 120px;
+    min-height: 100px;
 }
-.barrier-right-1 {
-    width: 100%;
-    position: relative;
-    min-height: 120px;
-}
-.barrier-right-2 {
+.med-spacer {
     width: 100%;
     position: relative;
     min-height: 150px;
-    margin-bottom: 40px;
+}
+.large-spacer {
+    width: 100%;
+    position: relative;
+    min-height: 200px;
 }
