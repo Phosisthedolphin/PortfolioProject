@@ -115,6 +115,11 @@ function changeBGColorBack() {
     }
 }
 
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
 document.getElementById("a-btn").addEventListener("click", textBox);
 document.getElementById("b-btn").addEventListener("click", changeClass);
 document.getElementById("b-btn").addEventListener("click", changeBGColor);
